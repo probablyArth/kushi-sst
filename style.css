@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap');
+*{
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+}
+:root{
+ --primary-text-color: #183B56;
+ --secondary-text-color: #577592;
+ --accent-color: #2294ed;
+ --accent-color-dark: #1d69a3;
+ --padding-inline-section: 20px;
+
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    color: var(--primary-text-color);
+}
+
+h1{
+    font-size: 3rem;
+}
+h2{
+   font-size: 2rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25 rem;
+    color:var(--secondary-text-color);
+    line-height: 1.8rem;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ul{
+    list-style: none;
+}
+
+/*utility classes*/
+
+.small-bold-text{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.hover-link{
+    color: var(--primary-text-color);
+    transition: 0.2s ease-out;
+}
+.hover-link:hover{
+    color: var(--accent-color);
+}
+.primary-button{
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: white !important;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.2s ease-out;
+    justify-content: space-around;
+}
+.primary-button:hover{
+    background-color: var(--accent-color-dark);
+}
+
+/*top banner*/
+.top-banner{
+    background-color: #097969;
+    background-image: url('./assets/asset1.jpg');
+    background-size: 500px;
+
+}
+.banner-text{
+    color:rgb(222, 250, 247);
+    padding: 25px;
+    text-align: center;
+}
+.main-nav{
+    margin-top: 10px;
+    justify-content: space-between;
+}
+.company-logo img{
+    width: 150px;
+}
+.nav links{
+    flex-basis: 600px;
+}
+.nav-links ul{
+    justify-content: end;
+    gap:60px;
+}
+/*header section*/
+.header{
+  padding: 40px var(--padding-inline-section)
+  
+}
+header{
+    
+}
+.header-section{
+    justify-content: center;
+    gap: 0px;
+   
+}
+.header-left{
+    max-width: 40vw;
+}
+.header-left h1{
+    margin-top: 10px;
+}
+.get-started-button{
+    margin-top: 20px;
+}
+.header-right img{
+    width: 300px;
+}
+/* companies header*/
+.companies-header{
+    text-align: center;
+    margin-block: 30px;
+    color: var(--primary-text-color);
+}
+.logos{
+    justify-content: space-between;
+    flex-wrap:wrap ;
+}
+.logo{
+    width: 180px;
+    height: 50px;
+}
+/*features section*/
+.features-section{
+    padding: 80px var(--padding-inline-section) 0;
+    background-color: #82c39d;
+    padding: 100px 0px;
+    margin-top: 50px;
+   
+}
+.features-header{
+    text-align: center;
+}
+.features-header h2{
+    margin-bottom: 20px;
+    
+    
+}
+.features-area{
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.features-card{
+
+    align-items: center;
+    flex-direction: column ;
+    gap: 20px;
+    max-width: 50%;
+    text-align: center;
+}
+.recycle{
+    width: 60px;
+    height: 60px;
+} 
+.icon{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+.child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+/*big features*/
+.big-features-section{
+    padding: 30px var(--padding-inline-section) 0;
+   
+}
+.big-feature-container{
+    margin: 60px;
+    /* gap:30px !important; */
+    max-width: 1000px;
+    margin: 50px auto;
+ 
+    /* border: 1px solid black; */
+    /* background-color: black; */
+
+}
+.feature-img img{
+    width:75%; 
+}
+.random{
+    /* height: 500px;
+    width: 500px; */
+    /* justify-content: space-around;
+    margin-block: 150px;
+    align-items:center;
+    margin-left: 230px; */
+    /* width: 75%; */
+}
+.feature-desc{
+     flex-direction: column;
+     align-items: flex-start;
+}
+.big-feature {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+}
